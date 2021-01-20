@@ -46,7 +46,7 @@ public class App
         parameters.put("CollectionBeanParam", beanCollectionDataSource);
         
         // local jasper template
-        InputStream inputStream = new FileInputStream(new File("/home/i-exceed.com/taher.talikoti/JaspersoftWorkspaceV2/MyJasperProject/JasperReport_A4.jrxml"));
+        InputStream inputStream = new FileInputStream(new File("JasperReport_A4.jrxml"));
         JasperDesign design = JRXmlLoader.load(inputStream);
         JasperReport jasperReport = JasperCompileManager.compileReport(design);
         
